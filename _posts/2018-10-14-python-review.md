@@ -4,7 +4,7 @@ title: 'Python 기본 문법 정리!'
 date: 2018-10-14
 update: 2018-11-13
 author: Jihyun-ella
-cover: 'https://user-images.githubusercontent.com/43994376/47008979-53f96700-d176-11e8-9fa5-caa20a5c00a3.png'
+cover: '/assets/img/2018-10-14-python-review-cover.png'
 tags: Python
 ---
 

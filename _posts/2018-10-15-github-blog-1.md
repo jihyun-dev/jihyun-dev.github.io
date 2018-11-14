@@ -3,7 +3,7 @@ layout: post
 title: 'GitHub 블로그 만들기 1 - GitHub Pages, Jekyll 개념'
 date: 2018-10-15
 author: Jihyun-ella
-cover: 'https://user-images.githubusercontent.com/43994376/47005858-9cf9ed00-d16f-11e8-8d6a-384d42658868.png'
+cover: '/assets/img/2018-10-15-github-blog-1-cover.png'
 tags: Jekyll Github Web
 ---
 

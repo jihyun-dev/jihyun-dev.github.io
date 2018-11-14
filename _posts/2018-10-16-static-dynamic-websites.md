@@ -3,7 +3,7 @@ layout: post
 title: '정적 웹사이트와 동적 웹사이트'
 date: 2018-10-16
 author: Jihyun-ella
-cover: 'https://user-images.githubusercontent.com/43994376/47020898-51f2d080-d195-11e8-84ca-958f788a0c2c.png'
+cover: '/assets/img/2018-10-16-static-dynamic-websites-cover.png'
 tags: Web
 ---
 <center>정적 웹사이트와 동적 웹사이트의 개념과 차이를 알아보자</center>
@@ -16,7 +16,7 @@ tags: Web
 
 # 정적 웹사이트와 동적 웹사이트의 구성
 ---
-![static vs dynamic](https://user-images.githubusercontent.com/43994376/47000489-569e9100-d163-11e8-8851-ed872b5baead.png)
+![static vs dynamic](/assets/img/2018-10-16-static-dynamic-websites-static-vs-dynamic.png)
 정적 웹사이트는 웹페이지를 표현하는 HTML, CSS, JS 등으로 구성된다. 동적 웹사이트는 이러한 문서와 더불어, 클라이언트 요청 처리를 위한 서버측 스크립트(PHP 등)와 DB 등으로 구성된다.
 <br><br>
 

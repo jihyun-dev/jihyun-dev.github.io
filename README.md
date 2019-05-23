@@ -1,3 +1,3 @@
-### jihyun-ella.github.io
+### jihyun-dev.github.io
 This is my GitHub Page :)
-[![page](/assets/img/README-img.png)](https://jihyun-ella.github.io)
+[![page](/assets/img/README-img.png)](https://jihyun-dev.github.io)

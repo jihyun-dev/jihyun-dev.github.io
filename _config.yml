@@ -1,6 +1,6 @@
     # Site settings
 title: '나 지현쓰'
-description: '개발 일기'
+description: '개발 기록용'
 keyword: ''
 url: 'http://jihyun-dev.github.io' # your host
 
@@ -19,7 +19,7 @@ footer:
 # Author
 author: '나지현'
 nickname: '나지'
-bio: '드길집사'
+bio: ''
 avatar: '/assets/img/profile.png'
 
 # Search

@@ -2,7 +2,7 @@
 layout: post
 title: '정적 웹사이트와 동적 웹사이트'
 date: 2018-10-16
-author: Jihyun-ella
+author: Jihyun
 cover: '/assets/img/2018-10-16-static-dynamic-websites-cover.png'
 tags: Web
 ---

@@ -3,7 +3,7 @@ layout: post
 title: 'Python 기본 문법'
 date: 2018-10-14
 update: 2018-11-13
-author: Jihyun-ella
+author: Jihyun
 cover: '/assets/img/2018-10-14-python-review-cover.png'
 tags: Python
 ---

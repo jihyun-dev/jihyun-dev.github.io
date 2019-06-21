@@ -1,0 +1,98 @@
+---
+layout: post
+title: 'Python 백준 알고리즘 1단계 - 입/출력 받아보기'
+date: 2019-06-19
+update: 2019-06-19
+author: Jihyun
+cover: '/assets/img/2019-06-18-python-algorithm-cover.png'
+tags: Python, Algorithm
+---
+
+
+> 백준 단계별 풀이 - 1단계(입/출력 받아보기) 문제를 풀이한다.
+
+
+## 1단계 입/출력 받아보기
+
+### 2557. Hello World! 출력
+```python
+print("Hello World!") #This is comment line.
+```
+
+### 1000. 두 정수를 입력받아 A+B 출력
+```python
+# 입력: 1 2
+# 출력: 3
+a, b = map(int, input().split())
+print(a+b)
+```
+* 입력값이 한줄, 각각 따로 저장해야함
+<br> => 입력받은 문자열을 공백 기준으로 나누는 **split()** 을 사용하여 각 변수 a, b에 저장한다.
+* input()을 통해 입력받은 값은 따로 데이터 타입을 평가하지 않고, "1", "2"의 문자로 저장된다.
+<br> => 따라서 내장함수 **map(f, iterable)** 을 사용하여 정수로 변환한다. (f: 함수)
+
+
+### 10172. 개 그림 출력
+```python
+print('|\_/|')
+print('|q p|   /}')
+print('( 0 )\"\"\"\\')
+print('|\"^\"`    |')
+print('||_/=\\\\__|')
+```
+* 따옴표("): \" (따옴표 앞에 역슬래시 추가)
+* 역슬래시(\\): \\\\ (역슬래시 앞에 역슬래시 추가)
+
+### 10718. 주어진 문자를 반복하여 출력
+```python
+# 출력: 강한친구 대한육군
+#      강한친구 대한육군
+for n in range(2): # 0부터 1까지, 총 2번 반복
+    print("강한친구 대한육군")
+```
+
+### 11718. 입력받은 그대로 출력하기(1)
+```python
+# 입력: (공백 미포함)
+#      Hello
+#      Baekjoon
+#      Online Judge
+#출력: Hello
+#      Baekjoon
+#      Online Judge
+while True:
+    try:
+        print(input())
+    except EOFError:
+        break
+```
+* 입력 받은 값을 **한 줄씩 입/출력** 하다가, EOF에러가 발생하면 종료한다.
+<br> => 시간: 64ms
+
+
+### 11719. 입력받은 그대로 출력하기(2)
+```python
+# 입력: (공백 포함)
+#      Hello
+#      
+#      Online Judge
+#출력:  Hello
+#      
+#      Online Judge
+import sys
+
+str = sys.stdin.read()
+sys.stdout.write(str)
+```
+* input()은 한 줄만 입력받음
+<br> => 외장함수 **sys**의 **read**(표준 입력 스트림) EOF까지 모두 읽음, 여러 줄을 입력받을 수 있다.
+* **write**(표준 출력 스트림)
+<br> => 시간: 56ms
+
+#### 관련글
+#### 관련글
+- [Python 백준 알고리즘 2단계 - 사칙연산](https://jihyun-dev.github.io/2019/06/20/python-algorithm-2.html)
+- [Python 백준 알고리즘 3단계 - 입/출력 받아보기](https://jihyun-dev.github.io/2019/06/21/python-algorithm-3.html)
+
+#### **Reference**
+- Baekjoon Online Judge: https://www.acmicpc.net

@@ -2,7 +2,7 @@
 layout: post
 title: 'GitHub 블로그 만들기 1 - GitHub Pages, Jekyll 개념'
 date: 2018-10-15
-author: Jihyun-ella
+author: Jihyun
 cover: '/assets/img/2018-10-15-github-blog-1-cover.png'
 tags: Jekyll Github Web
 ---
@@ -35,7 +35,7 @@ gem install jekyll // 루비의 gem 패키지 인스톨러를 통해 지킬 설�
 
 ---
 #### 관련글
-- [GitHub 블로그 만들기 2 - Jekyll 테마 가져오기](https://jihyun-ella.github.io/2018/10/19/github-blog-2.html)
+- [GitHub 블로그 만들기 2 - Jekyll 테마 가져오기](https://jihyun-dev.github.io/2018/10/19/github-blog-2.html)
 
 #### **Reference**
 - Github Page: https://pages.github.com  

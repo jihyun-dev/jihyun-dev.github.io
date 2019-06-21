@@ -2,7 +2,7 @@
 layout: post
 title: 'GitHub 블로그 만들기 2 - Jekyll 테마 가져오기'
 date: 2018-10-19
-author: Jihyun-ella
+author: Jihyun
 cover: '/assets/img/2018-10-15-github-blog-1-cover.png'
 tags: Jekyll Github Web
 ---

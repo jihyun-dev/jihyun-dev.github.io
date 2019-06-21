@@ -71,7 +71,7 @@ print(-1 if total<0 else total % 5 + bag)
 ```
 
 #### 관련글
-- [Python 백준 알고리즘 1단계 - 입/출력 받아보기](https://jihyun-dev.github.io/2019-06-19-python-algorithm-1)
+- [Python 백준 알고리즘 1단계 - 입/출력 받아보기](https://jihyun-dev.github.io/2019-06-19-python-algorithm-1.html)
 
 #### **Reference**
 - Baekjoon Online Judge: https://www.acmicpc.net

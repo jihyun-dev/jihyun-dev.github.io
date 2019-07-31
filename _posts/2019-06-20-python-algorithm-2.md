@@ -1,77 +1,80 @@
 ---
 layout: post
-title: 'Python 백준 알고리즘 2단계 - 사칙연산'
+title: '[Python] 백준 알고리즘 2단계 - 사칙연산'
 date: 2019-06-20
 update: 2019-06-20
 author: Jihyun
 cover: '/assets/img/2019-06-18-python-algorithm-cover.png'
-tags: Python, Algorithm
+tags: Python Algorithm
 ---
 
 
-> 백준 단계별 풀이 - 1단계(입/출력 받아보기) 문제를 풀이한다.
+
+> 백준 단계별 풀이 - 2단계(사칙연산) 문제를 풀이한다.
 
 
-## 2단계 사칙연산 도전하기
+## 2단계 if문
 
-### 10869. 사칙연산
-A+B, A-B, A*B, A/B(몫), A%B(나머지)를 출력하는 프로그램
+### 1330. 두 수 비교하기
+자연수 N이 주어졌을 때, 1부터 N까지 한 줄에 하나씩 출력하는 프로그램
 ```python
-# 입력 : 7 3
-# 출력: 10
-#      4
-#      21
-#      2
-#      1
 a, b = map(int, input().split())
-print(a+b, a-b, a*b, a//b, a%b, sep='\n')
+print('<' if a < b else '>' if a > b else '==')
 ```
-* 몫을 반환하는 연산자: // <br>
-  나머지를 반환하는 연산자: %
-* print()에서 줄바꾸기: sep=\n 추가
+* inline elif 사용
 
-
-### 2558. 두 정수를 입력받아 A+B 출력
-```python
-# 입력: 1
-#      2
-# 출력: 3
-print(int(input())+int(input()))
+### 9498. 시험 성적
+시험 점수를 입력받아 90 ~ 100점은 A, 80 ~ 89점은 B, 70 ~ 79점은 C, 60 ~ 69점은 D, 나머지 점수는 F를 출력하는 프로그램
+```Python
+n = int(input())
+print('A' if 90<=n<=100 else 'B' if 80<=n<=89 else 'C' if 70<=n<=79 else 'D' if 60<=n<=69 else 'F')
 ```
-```python
-sum = 0
-for n in range(2):
-    num = int(input())
-    sum += num
-print(sum)
+```Python
+print("FFFFFFDCBAA"[int(input())//10])
 ```
-* input()으로 받은 값은 문자열이므로 int로 매핑: int(input())
+* 입력값을 10점으로 나눈 후, 문자열 리스트의 인덱스로 출력한다.
+* 도대체 이런 생각은 어떻게 하는걸까,........
 
-### 2839. 설탕 배달
-3kg와 5kg의 설탕을 가장 적은 수의 봉지로 배달하려고 한다. <br>
-설탕의 무게를 입력받고,<br>
-이 값이 3, 5kg의 두 봉지로 조합이 가능하다면, 가장 적은 봉지의 수를 출력하고,
-조합이 되지 않는다면 -1을 출력한다.
+### 2753. 윤년
+연도가 주어졌을 때, 윤년이면 1, 아니면 0을 출력하는 프로그램
+(윤년은 연도가 4의 배수이면서, 100의 배수가 아닐 때 또는 400의 배수)
 
-입력의 경우의 수:
-1. 5와 3의 배수 or 5의 배수 => 가장 큰 봉지(5)로 최대한 많이 담는다. => total % 5 = 0<br>
-2. 3의 배수 => total % 3 = 0 <br>
-3. 그 외 => -1
+```Python
+n = int(input())
+print(1 if n%4 == 0 and n%100 != 0 else 1 if n%400 == 0 else 0 )
+```
+```Python
+print(int((n%4 == 0 and n%100 != 0) or n%400))
+```
 
-```python
-total = int(input())
-bag = 0
+### 2884. 알람 시계
+입력 시간보다 45분 일찍 맞춰지는 알람 시계 프로그램
+```Python
+# 입력: 10 10
+# 출력: 9 25
+h, m = map(int, input().split())
+m -= 45
+if m<0:
+    h -= 1
+    if h<1:
+        h = 23
+        m = 60+m
+    else:
+        m = 60+m
+elif m == 0:
+    m = 0
+print(h, m)
+```
 
-while total % 5: # (1) 가장 큰 5kg 봉지로 담아본다. 5의 배수이면 while문을 빠져나간다.
-    total -= 3 # (1) 5의 배수가 아니므로 3kg 봉지로 담아본다.
-    bag += 1 # (2)3kg의 한 봉지만큼 증가
-print(-1 if total<0 else total % 5 + bag)
-# (3) total에 3을 계속 빼서 음수가 되면 조합이 되지 않으므로 -1 출력
-# 그렇지 않다면 5kg 봉지 수 + 3kg 봉지 수 출력
+### 10817. 세 수
+세 정수 A, B, C가 주어지고, 두 번쨰로 큰 정수를 출력하는 프로그램
+```Python
+
 ```
 
 #### 관련글
-- [Python 백준 알고리즘 1단계 - 입/출력 받아보기](https://jihyun-dev.github.io/2019-06-19-python-algorithm-1.html)
+- [Python 백준 알고리즘 1단계 - 입출력과 사칙연산](https://jihyun-dev.github.io/2019/06/19/python-algorithm-1.html)
+- [Python 백준 알고리즘 3단계 - for문](https://jihyun-dev.github.io/2019/06/20/python-algorithm-3.html)
 
 #### **Reference**
 - Baekjoon Online Judge: https://www.acmicpc.net

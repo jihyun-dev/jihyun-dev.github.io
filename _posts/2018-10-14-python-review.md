@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Python 기본 문법'
+title: '[Python] 파이썬 기본 문법'
 date: 2018-10-14
 update: 2018-11-13
 author: Jihyun

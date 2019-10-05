@@ -3,7 +3,7 @@ layout: post
 title: '[Javascript] D3.js - 2. Multi-Line Chart'
 date: 2019-06-28
 author: Jihyun
-cover: '/assets/img/2019-06-27-javascript-d3-cover.png'
+cover: '/assets/img/2019-06-27-d3-cover.png'
 tags: Javascript D3.js
 ---
 
